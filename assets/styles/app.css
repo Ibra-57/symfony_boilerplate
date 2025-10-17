@@ -1,3 +1,65 @@
-body {
-    background-color: skyblue;
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background-color: #ffcc33;
+    color: #222;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: color 0.2s, transform 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #b30000;
+    transform: scale(1.05);
+}
+
+/* CONTENU PRINCIPAL */
+main {
+    flex: 1;
+    background-color: #a3e1fa;
+    padding: 30px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
 }

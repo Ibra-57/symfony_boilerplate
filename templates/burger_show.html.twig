@@ -1,1 +1,12 @@
 {% extends 'base.html.twig' %}
+
+{% block title %}Détails du burger{% endblock %}
+
+{% block body %}
+    <h1>Détails du burger ID : {{ id }}</h1>
+
+    <h2>{{ burger.nom }}</h2>
+    <p>{{ burger.description }}</p>
+
+    <a href="{{ path('burgers_list') }}">← Retour à la liste des burgers</a>
+{% endblock %}
